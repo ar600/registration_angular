@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Registratin with ANgular';
+  user = new User();
+  users = [];
+
+  onSubmit = function(){
+    
+    this.users.push(this.user);
+    console.log(this.users);
+
+    this.user = new User();
+  }
 }

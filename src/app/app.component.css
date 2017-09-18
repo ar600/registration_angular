@@ -1,0 +1,19 @@
+.wrapper{
+  text-align: left;
+  width: 700px;
+  height: auto;
+  padding-left: 10px;
+  margin: 0px auto;
+  border: 1px  solid gray;
+}
+
+.ng-invalid {}
+.ng-valid {}
+.ng-untouched { }
+.ng-touched {}
+.ng-dirty { }
+.ng-pristine { }
+
+.red{
+  color: red;
+}
