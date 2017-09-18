@@ -3,7 +3,7 @@
   <h1>
   {{title}}!
   </h1>
-  <h4 [ngStyle]="{'color':'green'}">success message goes here</h4>
+  <h4 *ngIf='success'   [ngStyle]="{'color':'green'}">success message goes here</h4>
 
 <div class="wrapper">
 
@@ -54,8 +54,8 @@
   <span class="red" *ngIf="!lucky.valid" >lucky needed </span>
   <br><br>
   <!-- <input type="submit" name="register" value="Register" > -->
-  <input type="submit" name="register"  value="Register" >
-  
+  <input type="submit" name="register"  value="Register" *ngIf='email.valid'>
+
   <!-- <span class="red" *ngIf='myForm.email.valid' >Last name needed </span> -->
 
   </form>
